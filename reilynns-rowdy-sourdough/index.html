@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reilynn's Rowdy Sourdough | Homemade Wholesome Sourdough Bread</title>
+  <meta name="description" content="Homemade wholesome sourdough baked with love. Real ingredients, no potassium bromate, no additives. Loaves, half loaves, and by the slice. Coming soon!" />
+
+  <!-- Social share preview (update image path once your photo is added) -->
+  <meta property="og:title" content="Reilynn's Rowdy Sourdough" />
+  <meta property="og:description" content="Homemade wholesome sourdough, baked with love. No potassium bromate, no additives." />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@600&family=Karla:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css?v=21" />
+</head>
+<body>
+  <!-- Top ribbon -->
+  <div class="topbar">
+    <span>✨ Made in a home kitchen with love 🌟 &middot; Now accepting orders!</span>
+  </div>
+
+  <!-- Navigation -->
+  <header class="nav" id="top">
+    <a class="nav__brand" href="#top">
+      <span class="nav__brand-mark" aria-hidden="true">
+        <!-- Light pink bowl with flour splashing + sparkles + one mixing spoon -->
+        <svg viewBox="0 0 64 64" width="38" height="38" role="img" aria-label="Pink bowl with flour and mixing spoon">
+          <circle cx="10" cy="10" r="2.4" fill="#fffaf2"/>
+          <circle cx="20" cy="6" r="3.2" fill="#fffaf2"/>
+          <circle cx="32" cy="5" r="2.6" fill="#fffaf2"/>
+          <circle cx="42" cy="9" r="2.1" fill="#f4e7d2"/>
+          <circle cx="48" cy="16" r="1.8" fill="#fffaf2"/>
+          <circle cx="8" cy="20" r="2" fill="#f4e7d2"/>
+          <circle cx="16" cy="24" r="1.5" fill="#fffaf2"/>
+          <circle cx="28" cy="18" r="1.7" fill="#f4e7d2"/>
+          <circle cx="38" cy="22" r="1.3" fill="#fffaf2"/>
+          <path d="M12 4l1.2 2.4-2.6.4 1.9 1.8-.5 2.6 2.3-1.2 2.3 1.2-.5-2.6 1.9-1.8-2.6-.4z" fill="#f2a9c2"/>
+          <path d="M46 3l.8 1.6-1.7.3 1.2 1.2-.3 1.7 1.5-.8 1.5.8-.3-1.7 1.2-1.2-1.7-.3z" fill="#e9b62e"/>
+          <path d="M6 14l.6 1.2-1.3.2.9.9-.2 1.3 1.1-.6 1.1.6-.2-1.3.9-.9-1.3-.2z" fill="#f2a9c2"/>
+          <g transform="rotate(20 42 20)">
+            <rect x="40" y="3" width="4.5" height="30" rx="2.25" fill="#cf7391"/>
+            <ellipse cx="42.25" cy="6" rx="5" ry="6.5" fill="#cf7391"/>
+          </g>
+          <path d="M15 30c2-6 9-8 17-8s15 2 17 8c-3 3-9 4-17 4s-14-1-17-4z" fill="#fbeede"/>
+          <path d="M8 30h48a24 24 0 0 1-48 0z" fill="#f5c4d5"/>
+          <ellipse cx="32" cy="30" rx="24" ry="3.8" fill="#fce0ea"/>
+        </svg>
+      </span>
+      <span class="nav__brand-text">Reilynn's Rowdy Sourdough</span>
+    </a>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#flavors">Flavors</a>
+      <a href="#formats">How to Get It</a>
+      <a href="#contact">Contact</a>
+      <div class="nav__dropdown" id="deliveryDropdown">
+        <button class="nav__delivery" id="deliveryToggle" type="button" aria-expanded="false" aria-haspopup="true">
+          Areas We Deliver To
+        </button>
+        <ul class="nav__delivery-menu" id="deliveryMenu" hidden>
+          <li>Essex County, NJ</li>
+          <li>Morris County, NJ</li>
+          <li>Union County, NJ</li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="nav__subtitle">Homemade Sourdough</div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <i class="star" style="top:6%; left:1%;"></i>
+    <i class="star star--gold star--sm" style="top:20%; right:4%;"></i>
+    <i class="star star--sm" style="bottom:10%; left:5%;"></i>
+    <div class="hero__content">
+      <h1 class="hero__title">
+        <span>Reilynn's</span>
+        <span>Rowdy</span>
+        <span class="hero__title-big">Sourdough</span>
+      </h1>
+      <p class="hero__tagline">Baked with love <span class="tw">✨</span></p>
+      <p class="hero__lede">
+        Made with care and the best ingredients, our homemade sourdough
+        brings warmth and joy to every bite.
+      </p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#flavors">See the Flavors</a>
+        <a class="btn btn--ghost" href="#contact">Follow Reilynn's Journey</a>
+      </div>
+    </div>
+
+    <div class="hero__media">
+      <i class="star" style="top:-14px; right:24px;"></i>
+      <div class="hero__collage">
+        <div class="collage__cell">
+          <img class="collage__item collage__item--pizza" src="images/hero-pizza.png" alt="Cheese pizza sourdough" />
+        </div>
+        <div class="collage__cell">
+          <img class="collage__item collage__item--cheese" src="images/hero-cheese-centered.png" alt="Golden cheese sourdough loaf" />
+        </div>
+        <div class="collage__cell">
+          <img class="collage__item collage__item--herb" src="images/hero-herb.png" alt="Herb-dusted sourdough loaf" />
+        </div>
+        <div class="collage__cell">
+          <img class="collage__item collage__item--chocchips" src="images/hero-chocchips.png" alt="Chocolate chip sourdough loaf" />
+        </div>
+      </div>
+      <div class="hero__badge">
+        <strong>No Potassium Bromate</strong>
+        <span>No additives</span>
+      </div>
+      <p class="hero__eyebrow hero__eyebrow--under">Homemade &middot; Sourdough Bread</p>
+    </div>
+  </section>
+
+  <!-- Story -->
+  <section class="story section" id="story">
+    <div class="section__head">
+      <p class="kicker">Our Story</p>
+      <h2>Real bread, made the slow way.</h2>
+    </div>
+
+    <div class="reilynn">
+      <div class="reilynn__art" aria-hidden="true">
+        <i class="star" style="top:12%; left:14%;"></i>
+        <i class="star star--gold star--sm" style="top:22%; right:16%;"></i>
+        <i class="star star--sm" style="bottom:16%; left:22%;"></i>
+        <span class="pin">
+          <!-- Kid's pink rolling pin -->
+          <svg viewBox="0 0 140 52" width="180" role="img" aria-label="Pink rolling pin">
+            <rect x="30" y="16" width="80" height="22" rx="11" fill="#f2a9c2"/>
+            <rect x="34" y="20" width="46" height="5" rx="2.5" fill="#ffffff" opacity="0.55"/>
+            <rect x="6" y="22" width="26" height="9" rx="4.5" fill="#e58aa6"/>
+            <rect x="108" y="22" width="26" height="9" rx="4.5" fill="#e58aa6"/>
+            <circle cx="8" cy="26.5" r="6" fill="#cf7391"/>
+            <circle cx="132" cy="26.5" r="6" fill="#cf7391"/>
+          </svg>
+        </span>
+      </div>
+      <div class="reilynn__text">
+        <p class="kicker">Meet Reilynn <span class="tw">✨</span></p>
+        <h3>The rowdy little baker behind it all</h3>
+        <p>
+          Our daughter Reilynn loves baking and expressing her creative side.
+          She is always creating something new. This brand is her kitchen
+          adventure, and every loaf carries a little of that imagination, energy,
+          and joy she pours into everything she makes.
+        </p>
+      </div>
+    </div>
+
+    <div class="story__grid">
+      <p class="story__lead">
+        Every loaf starts with a living sourdough starter, patient time, and
+        homemade wholesome ingredients &mdash; nothing you can't pronounce.
+      </p>
+      <div class="pillars">
+        <div class="pillar">
+          <div class="pillar__icon" aria-hidden="true">🌾</div>
+          <h3>Wholesome Ingredients</h3>
+          <p>Simple, high-quality ingredients and a long, natural ferment for real depth of flavor.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar__icon" aria-hidden="true">🚫</div>
+          <h3>No Additives</h3>
+          <p>No potassium bromate, ever. No preservatives, no fillers, no shortcuts &mdash; just honest bread.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar__icon" aria-hidden="true">❤️</div>
+          <h3>Baked With Love</h3>
+          <p>Small-batch and handmade at home, so every loaf gets the attention it deserves.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Flavors -->
+  <section class="flavors section" id="flavors">
+    <div class="section__head">
+      <p class="kicker">The Menu</p>
+      <h2>A flavor for every craving.</h2>
+      <p class="section__sub">More flavors baking all the time &mdash; here's what's on rotation.</p>
+    </div>
+
+    <div class="flavor-grid">
+      <article class="flavor-card">
+        <div class="flavor-card__emoji" aria-hidden="true">🍫</div>
+        <h3>Chocolate-Cream</h3>
+        <p>Rich chocolate swirled with a soft cream center &mdash; dessert in bread form.</p>
+      </article>
+      <article class="flavor-card">
+        <div class="flavor-card__emoji" aria-hidden="true">🍕</div>
+        <h3>Cheese Pizza</h3>
+        <p>Gooey cheese and pizza flavor baked right into a tangy sourdough crumb.</p>
+      </article>
+      <article class="flavor-card">
+        <div class="flavor-card__emoji" aria-hidden="true">🫐</div>
+        <h3>Blueberry</h3>
+        <p>Sweet, juicy blueberries folded through for a berry-packed bite.</p>
+      </article>
+      <article class="flavor-card">
+        <div class="flavor-card__emoji" aria-hidden="true">🍓</div>
+        <h3>Raspberry</h3>
+        <p>Bright, sweet-tart raspberry in every soft, chewy slice.</p>
+      </article>
+      <article class="flavor-card">
+        <div class="flavor-card__emoji" aria-hidden="true">🎃</div>
+        <h3>Pumpkin Spice</h3>
+        <p>Cozy fall spices baked into a soft, fragrant sourdough loaf.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Formats / How to get it -->
+  <section class="formats section" id="formats">
+    <div class="section__head">
+      <p class="kicker">How to Get It</p>
+      <h2>Loaves to slices &mdash; your call.</h2>
+    </div>
+    <div class="format-grid">
+      <div class="format">
+        <div class="format__icon" aria-hidden="true">🍞</div>
+        <h3>Full Loaves</h3>
+        <p>The whole thing. Perfect for family dinners and sandwich stockpiling.</p>
+      </div>
+      <div class="format">
+        <div class="format__icon" aria-hidden="true">🥖</div>
+        <h3>Half Loaves</h3>
+        <p>Just enough. Great for trying a new flavor.</p>
+      </div>
+      <div class="format">
+        <div class="format__icon" aria-hidden="true">🍽️</div>
+        <h3>By the Slice</h3>
+        <p>Grab a slice and see what all the fuss is about.</p>
+      </div>
+    </div>
+    <p class="formats__note">Remember to select Track Your Order</p>
+  </section>
+
+  <!-- Contact / pre-sale sign up -->
+  <section class="contact section" id="contact">
+    <div class="contact__card">
+      <p class="kicker">Pre-Sale</p>
+      <h2>Place Your Order <span class="tw">🌟</span></h2>
+      <p class="contact__lede">
+        Put our little baker's skills to the test and be the first to have it!
+      </p>
+
+      <div class="contact__actions">
+        <a class="btn btn--primary" href="#phone-contact">💬 Chat with the Baker</a>
+        <a class="btn btn--ghost" href="#email-contact">✨ Request a Custom Flavor</a>
+      </div>
+
+      <!-- TODO: fill in your real contact details before launch -->
+      <ul class="contact__list">
+        <li><span>Your Name</span><strong>[Your name here]</strong></li>
+        <li id="email-contact"><span>Email</span><strong>[your@email.com]</strong></li>
+        <li id="phone-contact"><span>Phone / Text</span><strong>[your number]</strong></li>
+      </ul>
+
+      <p class="contact__fineprint">Not a licensed commercial facility.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__brand">
+      <span class="nav__brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64" width="30" height="30" role="img" aria-label="brand mark">
+          <circle cx="10" cy="10" r="2.4" fill="#fffaf2"/>
+          <circle cx="20" cy="6" r="3.2" fill="#fffaf2"/>
+          <circle cx="32" cy="5" r="2.6" fill="#fffaf2"/>
+          <circle cx="42" cy="9" r="2.1" fill="#f4e7d2"/>
+          <circle cx="48" cy="16" r="1.8" fill="#fffaf2"/>
+          <circle cx="8" cy="20" r="2" fill="#f4e7d2"/>
+          <circle cx="16" cy="24" r="1.5" fill="#fffaf2"/>
+          <circle cx="28" cy="18" r="1.7" fill="#f4e7d2"/>
+          <circle cx="38" cy="22" r="1.3" fill="#fffaf2"/>
+          <path d="M12 4l1.2 2.4-2.6.4 1.9 1.8-.5 2.6 2.3-1.2 2.3 1.2-.5-2.6 1.9-1.8-2.6-.4z" fill="#f2a9c2"/>
+          <path d="M46 3l.8 1.6-1.7.3 1.2 1.2-.3 1.7 1.5-.8 1.5.8-.3-1.7 1.2-1.2-1.7-.3z" fill="#e9b62e"/>
+          <g transform="rotate(20 42 20)">
+            <rect x="40" y="3" width="4.5" height="30" rx="2.25" fill="#cf7391"/>
+            <ellipse cx="42.25" cy="6" rx="5" ry="6.5" fill="#cf7391"/>
+          </g>
+          <path d="M15 30c2-6 9-8 17-8s15 2 17 8c-3 3-9 4-17 4s-14-1-17-4z" fill="#fbeede"/>
+          <path d="M8 30h48a24 24 0 0 1-48 0z" fill="#f5c4d5"/>
+          <ellipse cx="32" cy="30" rx="24" ry="3.8" fill="#fce0ea"/>
+        </svg>
+      </span>
+      Reilynn's Rowdy Sourdough
+    </div>
+    <p class="footer__tag">Baked with love. Made with care.</p>
+    <p class="footer__copy">&copy; <span id="year"></span> Reilynn's Rowdy Sourdough. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
