@@ -7,3 +7,12 @@ desktop.ini
 # Dependency / build output (none needed for this static site)
 node_modules/
 dist/
+
+# Local env / secrets (never commit Twilio keys)
+.env
+.env.*
+.dev.vars
+*.pyc
+__pycache__/
+business-cards/__pycache__/
+business-cards/*.tmp.pdf

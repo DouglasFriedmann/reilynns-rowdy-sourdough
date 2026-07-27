@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="3.75in" height="2.25in" viewBox="0 0 3.75 2.25">
+  <rect width="3.75" height="2.25" fill="#F6F0E4"/>
+  <!-- trim guide (do not print): 0.125in inset -->
+  <g transform="translate(0.125,0.125)">
+    <line x1="1.15" y1="0.18" x2="1.15" y2="1.82" stroke="#C9B7A5" stroke-width="0.01"/>
+    <!-- bowl icon simplified -->
+    <g transform="translate(0.58,0.95)">
+      <circle cx="-0.22" cy="-0.22" r="0.03" fill="#FFF8F0"/>
+      <circle cx="-0.08" cy="-0.28" r="0.04" fill="#FFF8F0"/>
+      <path d="M-0.28,-0.22 l0.03,0.06 -0.065,0.01 0.047,0.045 -0.012,0.065 0.057,-0.03 0.057,0.03 -0.012,-0.065 0.047,-0.045 -0.065,-0.01z" fill="#E891AE"/>
+      <path d="M0.22,-0.28 l0.02,0.04 -0.043,0.007 0.031,0.03 -0.008,0.043 0.038,-0.02 0.038,0.02 -0.008,-0.043 0.031,-0.03 -0.043,-0.007z" fill="#C9A04A"/>
+      <g transform="rotate(18 0.12 -0.02)">
+        <rect x="0.09" y="-0.12" width="0.06" height="0.38" rx="0.03" fill="#D9789A"/>
+        <ellipse cx="0.12" cy="-0.14" rx="0.07" ry="0.09" fill="#D9789A"/>
+      </g>
+      <ellipse cx="0" cy="-0.02" rx="0.30" ry="0.08" fill="#FBEEDF"/>
+      <path d="M-0.34,0 C-0.34,0.36 0.34,0.36 0.34,0 Z" fill="#F5C4D5"/>
+      <ellipse cx="0" cy="0" rx="0.34" ry="0.05" fill="#FCE0EA"/>
+    </g>
+    <text x="1.35" y="0.42" font-family="Arial Narrow, Arial, sans-serif" font-weight="700" font-size="0.19" fill="#4A2318">REILYNN'S</text>
+    <text x="1.35" y="0.62" font-family="Arial Narrow, Arial, sans-serif" font-weight="700" font-size="0.19" fill="#4A2318">ROWDY</text>
+    <text x="1.35" y="0.82" font-family="Arial Narrow, Arial, sans-serif" font-weight="700" font-size="0.19" fill="#4A2318">SOURDOUGH</text>
+    <line x1="1.35" y1="0.98" x2="2.05" y2="0.98" stroke="#E891AE" stroke-width="0.012"/>
+    <line x1="2.25" y1="0.98" x2="3.20" y2="0.98" stroke="#E891AE" stroke-width="0.012"/>
+    <path d="M2.15,0.98 l0.015,0.03 -0.033,0.005 0.024,0.022 -0.006,0.033 0.029,-0.015 0.029,0.015 -0.006,-0.033 0.024,-0.022 -0.033,-0.005z" fill="#E891AE"/>
+    <text x="1.55" y="1.22" font-family="Segoe UI, Arial, sans-serif" font-size="0.12" fill="#4A2318">www.rowdysourdough.com</text>
+    <circle cx="1.43" cy="1.18" r="0.07" fill="none" stroke="#D9789A" stroke-width="0.012"/>
+    <text x="1.55" y="1.48" font-family="Segoe UI, Arial, sans-serif" font-weight="700" font-size="0.11" fill="#D9789A">TEXT ORDERS</text>
+    <text x="1.35" y="1.78" font-family="Arial Narrow, Arial, sans-serif" font-weight="700" font-size="0.24" fill="#4A2318">201-572-4418</text>
+  </g>
+</svg>

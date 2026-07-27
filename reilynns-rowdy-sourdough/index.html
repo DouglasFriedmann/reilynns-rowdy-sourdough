@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@600&family=Karla:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css?v=21" />
+  <link rel="stylesheet" href="css/styles.css?v=22" />
 </head>
 <body>
   <!-- Top ribbon -->
@@ -245,30 +245,82 @@
     <p class="formats__note">Remember to select Track Your Order</p>
   </section>
 
-  <!-- Contact / pre-sale sign up -->
+  <!-- Contact / order -->
   <section class="contact section" id="contact">
     <div class="contact__card">
-      <p class="kicker">Pre-Sale</p>
+      <p class="kicker">Orders &amp; Chat</p>
       <h2>Place Your Order <span class="tw">🌟</span></h2>
       <p class="contact__lede">
-        Put our little baker's skills to the test and be the first to have it!
+        Put our little baker's skills to the test! Text us about an order,
+        a custom flavor idea, or anything else &mdash; we'll reply on your phone.
       </p>
 
       <div class="contact__actions">
-        <a class="btn btn--primary" href="#phone-contact">💬 Chat with the Baker</a>
-        <a class="btn btn--ghost" href="#email-contact">✨ Request a Custom Flavor</a>
+        <button class="btn btn--primary" type="button" id="openChatBtn">
+          💬 Chat with the Baker / Request a Custom Flavor
+        </button>
       </div>
 
-      <!-- TODO: fill in your real contact details before launch -->
-      <ul class="contact__list">
-        <li><span>Your Name</span><strong>[Your name here]</strong></li>
-        <li id="email-contact"><span>Email</span><strong>[your@email.com]</strong></li>
-        <li id="phone-contact"><span>Phone / Text</span><strong>[your number]</strong></li>
-      </ul>
+      <form class="order-form" id="orderForm" novalidate>
+        <label class="order-form__field">
+          <span>Your Name</span>
+          <input type="text" name="name" id="orderName" autocomplete="name" required placeholder="First &amp; last name" />
+        </label>
+        <label class="order-form__field">
+          <span>Email</span>
+          <input type="email" name="email" id="orderEmail" autocomplete="email" required placeholder="you@email.com" />
+        </label>
+        <label class="order-form__field">
+          <span>Phone / Text</span>
+          <input type="tel" name="phone" id="orderPhone" autocomplete="tel" required placeholder="201-555-0100" />
+        </label>
+        <label class="order-form__field">
+          <span>What are you craving?</span>
+          <textarea name="message" id="orderMessage" rows="3" placeholder="Flavor, loaf size, pickup day, custom idea..."></textarea>
+        </label>
+        <button class="btn btn--primary order-form__submit" type="submit" id="orderSubmit">
+          Submit Order Request
+        </button>
+        <p class="order-form__status" id="orderStatus" role="status" aria-live="polite"></p>
+      </form>
 
-      <p class="contact__fineprint">Not a licensed commercial facility.</p>
+      <p class="contact__fineprint">
+        Prefer to text us directly?
+        <a class="contact__sms-link" href="sms:+12015724418?&body=Hi%20Reilynn's%20Rowdy%20Sourdough!">201-572-4418</a>
+        · Not a licensed commercial facility.
+      </p>
     </div>
   </section>
+
+  <!-- Chat panel (opens from combined CTA) -->
+  <div class="chat" id="chatPanel" hidden>
+    <div class="chat__backdrop" data-close-chat></div>
+    <div class="chat__window" role="dialog" aria-modal="true" aria-labelledby="chatTitle">
+      <header class="chat__header">
+        <div>
+          <p class="chat__eyebrow">Text the baker</p>
+          <h3 id="chatTitle">Chat with Reilynn's Rowdy Sourdough</h3>
+        </div>
+        <button class="chat__close" type="button" aria-label="Close chat" data-close-chat>&times;</button>
+      </header>
+      <div class="chat__thread" id="chatThread">
+        <div class="chat__bubble chat__bubble--baker">
+          Hi! Tell us what you'd like — an order, a custom flavor, or a question.
+          We'll text you back at the number you share. 🍞
+        </div>
+      </div>
+      <form class="chat__compose" id="chatForm">
+        <input type="text" name="name" id="chatName" placeholder="Your name" autocomplete="name" required />
+        <input type="tel" name="phone" id="chatPhone" placeholder="Your cell (for our reply)" autocomplete="tel" required />
+        <textarea name="message" id="chatMessage" rows="2" placeholder="Type your message..." required></textarea>
+        <button class="btn btn--primary" type="submit" id="chatSend">Send to baker</button>
+        <p class="chat__hint">
+          Sends a text to <strong>201-572-4418</strong>. Replies come to your phone
+          (not back into this box — that needs a bigger setup).
+        </p>
+      </form>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="footer">
@@ -301,6 +353,6 @@
     <p class="footer__copy">&copy; <span id="year"></span> Reilynn's Rowdy Sourdough. All rights reserved.</p>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=22"></script>
 </body>
 </html>

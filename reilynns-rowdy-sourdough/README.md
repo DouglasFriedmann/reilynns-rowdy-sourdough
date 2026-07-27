@@ -3,7 +3,7 @@
 A warm, mobile-friendly **pre-sale landing page** for Reilynn's Rowdy Sourdough.
 Baked with love, no preservatives, no fillers. 🍞
 
-Plain HTML/CSS/JS — no build step, no dependencies. Just open it and it works.
+Plain HTML/CSS/JS — no build step for the pages. Order/chat texts use a Cloudflare Pages Function + Twilio (see `SMS-SETUP.md`).
 
 ## Files
 
