@@ -558,6 +558,13 @@ h1, h2, h3 { margin: 0; line-height: 1.05; }
 }
 .order-form__status.is-ok { color: #2f6b3a; }
 .order-form__status.is-error { color: #9b2c2c; }
+.order-form__legal {
+  margin: 0.15rem 0 0;
+  text-align: center;
+  color: #9a8576;
+  font-size: 0.68rem;
+  line-height: 1.4;
+}
 
 .contact__fineprint { color: var(--muted); font-size: 0.85rem; margin: 0; }
 .contact__sms-link {
@@ -684,7 +691,25 @@ h1, h2, h3 { margin: 0; line-height: 1.05; }
   font-size: 1.15rem;
 }
 .footer__tag { font-family: var(--font-script); font-size: 1.5rem; color: var(--brown-soft); margin: 0.4rem 0 1rem; }
-.footer__copy { color: var(--muted); font-size: 0.85rem; margin: 0; }
+.footer__copy { color: var(--muted); font-size: 0.85rem; margin: 0 0 1.1rem; }
+.footer__legal {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-top: 0.85rem;
+  border-top: 1px solid rgba(74, 35, 24, 0.1);
+  text-align: left;
+}
+.footer__legal p {
+  margin: 0 0 0.55rem;
+  color: #9a8576;
+  font-size: 0.68rem;
+  line-height: 1.45;
+}
+.footer__legal p:last-child { margin-bottom: 0; }
+.footer__legal strong {
+  color: #8a7364;
+  font-weight: 700;
+}
 
 /* ---------- Responsive ---------- */
 @media (max-width: 860px) {
